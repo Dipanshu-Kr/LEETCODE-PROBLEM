@@ -1,0 +1,15 @@
+class Solution {
+    public int differenceOfSums(int n, int m) {
+       int disum = 0;
+        int non_disum = 0;
+       for(int i = 1; i <= n; i++){
+        if(i % m == 0){
+            disum += i;
+        }
+        if(i % m != 0){
+           non_disum += i;
+        }
+       }
+       return non_disum - disum; 
+    }
+}
