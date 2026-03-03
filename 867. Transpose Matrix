@@ -1,0 +1,15 @@
+class Solution {
+    public int[][] transpose(int[][] matrix) {
+        int mat[][] = new int[matrix[0].length][matrix.length];
+        int startrow = 0;
+        while(startrow < matrix.length){
+            for(int j = 0; j < matrix[0].length; j++){
+                mat[j][startrow] = matrix[startrow][j];
+                
+            }
+            startrow++;
+        }
+        return mat;
+        
+    }
+}
